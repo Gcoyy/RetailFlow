@@ -1,0 +1,151 @@
+transaction_id,transaction_date,customer_id,product_id,product_name,category,quantity,unit_price,total_amount,payment_method,store_location
+TXN-1001,2026-10-18 11:14:00,CUST-009,PROD-002,Mechanical Keyboard,Electronics,1,2499.00,2499.00,Cash,Davao City
+TXN-1002,2026-10-28 08:01:00,CUST-006,PROD-002,Mechanical Keyboard,Electronics,5,2499.00,12495.00,GCash,Mandaue
+TXN-1003,2026-10-13 19:41:00,CUST-045,PROD-001,Wireless Mouse,Electronics,5,599.00,2995.00,Debit Card,Talisay
+TXN-1004,2026-10-18 20:55:00,CUST-001,PROD-004,Notebook Set,Stationery,4,199.00,796.00,GCash,Talisay
+TXN-1005,2026-10-10 11:48:00,CUST-022,PROD-006,Water Bottle,Lifestyle,3,349.00,1047.00,Cash,Cebu City
+TXN-1006,2026-10-23 13:38:00,,PROD-007,Office Chair,Furniture,1,5499.00,5499.00,Cash,Talisay
+TXN-1007,2026-10-06 16:18:00,CUST-041,PROD-002,Mechanical Keyboard,Electronics,4,2499.00,9996.00,Debit Card,Lapu-Lapu
+TXN-1008,2026-10-03 18:14:00,CUST-019,PROD-004,Notebook Set,Stationery,1,199.00,199.00,Cash,Mandaue
+TXN-1009,2026-10-18 15:40:00,CUST-024,PROD-002,Mechanical Keyboard,Electronics,4,2499.00,9996.00,GCash,Lapu-Lapu
+TXN-1010,2026-10-18 19:59:00,CUST-044,PROD-006,Water Bottle,Lifestyle,2,349.00,698.00,Cash,Davao City
+TXN-1011,2026-10-16 10:29:00,CUST-025,PROD-003,USB-C Hub,Electronics,5,1299.00,6495.00,Maya,Davao City
+TXN-1012,2026-10-04 11:52:00,CUST-003,PROD-004,Notebook Set,Stationery,3,199.00,597.00,Maya,Talisay
+TXN-1013,2026-10-14 17:56:00,CUST-021,PROD-005,Desk Lamp,Home,1,899.00,899.00,GCash,Talisay
+TXN-1014,2026-10-10 12:08:00,CUST-016,PROD-007,Office Chair,Furniture,4,5499.00,21996.00,Debit Card,Davao City
+TXN-1015,2026-10-28 17:25:00,CUST-024,PROD-005,Desk Lamp,Home,5,899.00,4495.00,GCash,Mandaue
+TXN-1016,2026-10-04 09:09:00,CUST-041,PROD-008,Laptop Stand,Accessories,1,799.00,799.00,GCash,Talisay
+TXN-1017,2026-10-25 17:29:00,CUST-034,PROD-002,Mechanical Keyboard,Electronics,4,2499.00,9996.00,Maya,Davao City
+TXN-1018,2026-11-04 20:17:00,CUST-042,PROD-001,Wireless Mouse,Electronics,-2,599.00,-1198.00,Maya,Cebu City
+TXN-1019,2026-10-11 15:00:00,CUST-017,PROD-005,Desk Lamp,Home,4,899.00,3596.00,Debit Card,Mandaue
+TXN-1020,2026-11-02 17:12:00,CUST-010,PROD-002,Mechanical Keyboard,Electronics,3,2499.00,7497.00,Maya,Mandaue
+TXN-1021,2026-10-21 15:01:00,CUST-008,PROD-001,Wireless Mouse,Electronics,5,599.00,2995.00,Maya,Lapu-Lapu
+TXN-1022,2026-10-16 17:05:00,CUST-006,PROD-004,Notebook Set,Stationery,1,199.00,199.00,Credit Card,Cebu City
+TXN-1023,2026-10-31 16:10:00,CUST-017,PROD-003,USB-C Hub,Electronics,2,1299.00,2598.00,Debit Card,Davao City
+TXN-1024,2026-11-04 20:46:00,CUST-045,PROD-007,Office Chair,Furniture,2,5499.00,10998.00,GCash,Lapu-Lapu
+TXN-1025,2026-10-29 16:28:00,CUST-008,PROD-007,Office Chair,Furniture,3,5499.00,16497.00,GCash,Mandaue
+TXN-1026,2026-10-02 17:35:00,CUST-015,PROD-002,Mechanical Keyboard,Electronics,3,2499.00,7497.00,Debit Card,Mandaue
+TXN-1027,2026-10-04 11:04:00,CUST-003,PROD-001,Wireless Mouse,Electronics,1,599.00,599.00,Maya,Cebu City
+TXN-1028,2026-11-01 11:34:00,CUST-009,PROD-004,Notebook Set,Stationery,3,199.00,597.00,Debit Card,Davao City
+TXN-1029,2026-13-45 25:61:00,CUST-013,PROD-008,Laptop Stand,Accessories,2,799.00,1598.00,Cash,Cebu City
+TXN-1030,2026-10-28 14:29:00,CUST-004,PROD-007,Office Chair,Furniture,3,5499.00,16497.00,Cash,Cebu City
+TXN-1031,2026-10-07 11:12:00,CUST-013,PROD-007,Office Chair,Furniture,3,5499.00,16497.00,Debit Card,Talisay
+TXN-1032,2026-10-12 12:29:00,CUST-016,PROD-003,USB-C Hub,Electronics,4,1299.00,5196.00,Cash,Talisay
+TXN-1033,2026-11-04 08:05:00,CUST-016,PROD-002,Mechanical Keyboard,Electronics,1,2499.00,2499.00,GCash,Talisay
+TXN-1034,2026-10-14 14:57:00,CUST-004,PROD-008,Laptop Stand,Accessories,4,799.00,3196.00,GCash,Talisay
+TXN-1035,2026-10-17 20:50:00,CUST-030,PROD-001,Wireless Mouse,Electronics,4,599.00,2396.00,Maya,Talisay
+TXN-1036,2026-10-13 12:13:00,CUST-004,PROD-008,Laptop Stand,Accessories,2,799.00,1598.00,Debit Card,Davao City
+TXN-1037,2026-10-04 08:37:00,CUST-031,PROD-001,Wireless Mouse,Electronics,3,599.00,1797.00,Debit Card,Davao City
+TXN-1038,2026-11-02 09:54:00,CUST-012,PROD-003,USB-C Hub,Electronics,1,1299.00,1299.00,Cash,Davao City
+TXN-1039,2026-10-26 09:56:00,CUST-037,PROD-002,Mechanical Keyboard,Electronics,2,2499.00,4998.00,GCash,Davao City
+TXN-1040,2026-10-06 14:42:00,CUST-038,PROD-001,Wireless Mouse,Electronics,5,599.00,99999.99,Debit Card,Davao City
+TXN-1041,2026-10-14 18:45:00,CUST-021,PROD-006,Water Bottle,Lifestyle,3,349.00,1047.00,GCash,Lapu-Lapu
+TXN-1042,2026-10-20 15:20:00,CUST-005,PROD-007,Office Chair,Furniture,2,5499.00,10998.00,Cash,Talisay
+TXN-1043,2026-11-04 11:32:00,CUST-017,PROD-002,Mechanical Keyboard,Electronics,1,2499.00,2499.00,GCash,Lapu-Lapu
+TXN-1044,2026-10-24 12:10:00,CUST-029,PROD-002,Mechanical Keyboard,Electronics,2,2499.00,4998.00,Debit Card,Lapu-Lapu
+TXN-1045,2026-10-20 18:06:00,CUST-009,PROD-001,Wireless Mouse,Electronics,5,599.00,2995.00,Maya,Cebu City
+TXN-1046,2026-10-10 12:18:00,CUST-039,PROD-002,Mechanical Keyboard,Electronics,5,2499.00,12495.00,GCash,Lapu-Lapu
+TXN-1047,2026-11-02 15:16:00,CUST-004,PROD-004,Notebook Set,Stationery,3,199.00,597.00,Cash,Talisay
+TXN-1048,2026-10-01 13:49:00,CUST-009,PROD-005,Desk Lamp,Home,1,899.00,899.00,Maya,Mandaue
+TXN-1049,2026-10-28 16:00:00,CUST-008,PROD-008,Laptop Stand,Accessories,5,799.00,3995.00,Cash,Mandaue
+TXN-1050,2026-11-05 10:27:00,CUST-009,PROD-001,Wireless Mouse,Electronics,3,599.00,1797.00,Cash,Lapu-Lapu
+TXN-1051,2026-10-23 11:43:00,CUST-016,PROD-006,Water Bottle,Lifestyle,1,349.00,349.00,Cash,Lapu-Lapu
+TXN-1052,2026-10-10 11:55:00,CUST-011,PROD-007,Office Chair,Furniture,5,5499.00,27495.00,GCash,Talisay
+TXN-1053,2026-10-22 20:59:00,CUST-027,PROD-001,Wireless Mouse,Electronics,2,599.00,1198.00,GCash,Lapu-Lapu
+TXN-1054,2026-10-25 08:54:00,CUST-031,PROD-003,USB-C Hub,Electronics,1,1299.00,1299.00,GCash,Mandaue
+TXN-1055,2026-10-20 20:55:00,CUST-015,,Laptop Stand,Accessories,3,799.00,2397.00,GCash,Cebu City
+TXN-1056,2026-10-22 12:55:00,CUST-005,PROD-004,Notebook Set,Stationery,4,199.00,796.00,Maya,Lapu-Lapu
+TXN-1057,2026-10-22 08:07:00,CUST-017,PROD-007,Office Chair,Furniture,5,5499.00,27495.00,GCash,Davao City
+TXN-1058,2026-10-07 17:27:00,CUST-023,PROD-005,Desk Lamp,Home,1,899.00,899.00,Maya,Talisay
+TXN-1059,2026-11-06 11:16:00,CUST-003,PROD-002,Mechanical Keyboard,Electronics,4,2499.00,9996.00,Credit Card,Cebu City
+TXN-1060,2026-10-28 09:42:00,CUST-022,PROD-004,Notebook Set,Stationery,3,199.00,597.00,Debit Card,Lapu-Lapu
+TXN-1061,2026-11-02 12:42:00,CUST-027,PROD-002,Mechanical Keyboard,Electronics,3,2499.00,7497.00,Maya,Talisay
+TXN-1062,2026-10-09 11:26:00,CUST-043,PROD-005,Desk Lamp,Home,5,899.00,4495.00,Credit Card,Mandaue
+TXN-1063,2026-11-05 08:19:00,CUST-019,PROD-005,Desk Lamp,Home,4,899.00,3596.00,GCash,Talisay
+TXN-1064,2026-10-29 15:43:00,CUST-014,PROD-006,Water Bottle,Lifestyle,4,349.00,1396.00,Debit Card,Talisay
+TXN-1065,2026-10-19 16:42:00,CUST-041,PROD-003,USB-C Hub,Electronics,1,1299.00,1299.00,Debit Card,Lapu-Lapu
+TXN-1066,2026-10-20 11:51:00,CUST-013,PROD-002,Mechanical Keyboard,Electronics,2,2499.00,4998.00,GCash,Cebu City
+TXN-1067,2026-10-31 17:54:00,CUST-005,PROD-001,Wireless Mouse,Electronics,2,599.00,1198.00,Credit Card,Talisay
+TXN-1068,2026-11-01 14:15:00,CUST-010,PROD-004,Notebook Set,Stationery,4,199.00,796.00,Cash,Cebu City
+TXN-1069,2026-10-12 20:44:00,CUST-034,PROD-007,Office Chair,Furniture,2,5499.00,10998.00,Credit Card,Cebu City
+TXN-1070,2026-10-30 10:51:00,CUST-030,PROD-004,Notebook Set,Stationery,1,199.00,199.00,Debit Card,Davao City
+TXN-1071,2026-11-02 14:53:00,CUST-036,PROD-006,Water Bottle,Lifestyle,4,349.00,1396.00,Credit Card,Mandaue
+TXN-1072,2026-10-17 20:15:00,CUST-041,PROD-008,Laptop Stand,Accessories,4,799.00,3196.00,Crypto,Davao City
+TXN-1073,2026-10-18 15:04:00,CUST-019,PROD-008,Laptop Stand,Accessories,2,799.00,1598.00,GCash,Lapu-Lapu
+TXN-1074,2026-11-04 09:08:00,CUST-010,PROD-006,Water Bottle,Lifestyle,3,349.00,1047.00,GCash,Talisay
+TXN-1075,2026-10-05 14:26:00,CUST-022,PROD-003,USB-C Hub,Electronics,2,1299.00,2598.00,Debit Card,Talisay
+TXN-1076,2026-10-14 14:24:00,CUST-038,PROD-007,Office Chair,Furniture,1,5499.00,5499.00,Cash,Davao City
+TXN-1077,2026-10-01 13:19:00,CUST-025,PROD-007,Office Chair,Furniture,4,5499.00,21996.00,Credit Card,Davao City
+TXN-1078,2026-10-15 12:27:00,CUST-032,PROD-004,Notebook Set,Stationery,4,199.00,796.00,Cash,Talisay
+TXN-1079,2026-10-11 15:58:00,CUST-009,PROD-006,Water Bottle,Lifestyle,4,349.00,1396.00,Debit Card,Davao City
+TXN-1080,2026-11-06 18:01:00,CUST-006,PROD-001,Wireless Mouse,Electronics,4,599.00,2396.00,Credit Card,Mandaue
+TXN-1081,2026-10-04 12:24:00,CUST-021,PROD-008,Laptop Stand,Accessories,2,799.00,1598.00,GCash,Talisay
+TXN-1082,2026-10-25 12:48:00,CUST-027,PROD-006,Water Bottle,Lifestyle,3,349.00,1047.00,Maya,Cebu City
+TXN-1083,2026-11-04 08:22:00,CUST-015,PROD-008,Laptop Stand,Accessories,1,799.00,799.00,Cash,Cebu City
+TXN-1084,2026-10-13 08:39:00,CUST-010,PROD-001,Wireless Mouse,Electronics,2,599.00,1198.00,GCash,Mandaue
+TXN-1085,2026-11-06 11:29:00,CUST-045,PROD-008,Laptop Stand,Accessories,1,799.00,799.00,Maya,Lapu-Lapu
+TXN-1086,2026-10-08 20:52:00,CUST-011,PROD-003,USB-C Hub,Electronics,5,1299.00,6495.00,Maya,Cebu City
+TXN-1087,2026-11-06 18:58:00,CUST-025,PROD-001,Wireless Mouse,Electronics,3,599.00,1797.00,Credit Card,Mandaue
+TXN-1088,2026-10-16 09:44:00,CUST-020,PROD-002,Mechanical Keyboard,Electronics,5,2499.00,12495.00,Debit Card,Cebu City
+TXN-1088,2026-11-04 14:42:00,CUST-024,PROD-001,Wireless Mouse,Electronics,3,599.00,1797.00,Cash,Davao City
+TXN-1090,2026-10-27 15:06:00,CUST-028,PROD-006,Water Bottle,Lifestyle,1,349.00,349.00,Maya,Talisay
+TXN-1091,2026-10-12 19:33:00,CUST-042,PROD-003,USB-C Hub,Electronics,4,1299.00,5196.00,Maya,Davao City
+TXN-1092,2026-10-28 19:37:00,CUST-018,PROD-008,Laptop Stand,Accessories,4,799.00,3196.00,Maya,Mandaue
+TXN-1093,2026-10-29 11:48:00,CUST-030,PROD-002,Mechanical Keyboard,Electronics,3,2499.00,7497.00,Debit Card,Davao City
+TXN-1094,2026-10-02 15:54:00,CUST-021,PROD-007,Office Chair,Furniture,3,5499.00,16497.00,GCash,Talisay
+TXN-1095,2026-10-17 13:17:00,CUST-039,PROD-004,Notebook Set,Stationery,3,199.00,597.00,Maya,Davao City
+TXN-1096,2026-10-13 09:15:00,CUST-027,PROD-001,Wireless Mouse,Electronics,5,599.00,2995.00,Credit Card,Davao City
+TXN-1097,2026-11-01 15:50:00,CUST-002,PROD-004,Notebook Set,Stationery,4,199.00,796.00,Cash,Lapu-Lapu
+TXN-1098,2026-10-16 12:42:00,CUST-038,PROD-004,Notebook Set,Stationery,4,199.00,796.00,Maya,Talisay
+TXN-1099,2026-11-05 13:22:00,CUST-045,PROD-006,Water Bottle,Lifestyle,4,349.00,1396.00,Credit Card,Lapu-Lapu
+TXN-1100,2026-10-15 09:46:00,CUST-013,PROD-005,Desk Lamp,Home,3,899.00,2697.00,Maya,Cebu City
+TXN-1101,2026-10-14 19:30:00,CUST-018,PROD-003,USB-C Hub,Electronics,2,1299.00,2598.00,Debit Card,Davao City
+TXN-1102,2026-10-13 12:14:00,CUST-024,PROD-005,Desk Lamp,Home,1,899.00,899.00,GCash,Lapu-Lapu
+TXN-1103,2026-10-09 12:02:00,CUST-004,PROD-001,Wireless Mouse,Electronics,5,599.00,2995.00,Debit Card,Lapu-Lapu
+TXN-1104,2026-10-07 08:36:00,CUST-019,PROD-003,USB-C Hub,Electronics,4,-50.00,5196.00,Credit Card,Talisay
+TXN-1105,2026-10-12 08:16:00,CUST-031,PROD-008,Laptop Stand,Accessories,3,799.00,2397.00,Cash,Cebu City
+TXN-1106,2026-10-05 17:40:00,CUST-044,PROD-007,Office Chair,Furniture,4,5499.00,21996.00,Cash,Mandaue
+TXN-1107,2026-10-20 09:15:00,CUST-008,PROD-003,USB-C Hub,Electronics,5,1299.00,6495.00,Debit Card,Talisay
+TXN-1108,2026-10-25 15:58:00,CUST-029,PROD-004,Notebook Set,Stationery,5,199.00,995.00,Maya,Davao City
+TXN-1109,2026-11-06 17:03:00,CUST-040,PROD-007,Office Chair,Furniture,3,5499.00,16497.00,Cash,Mandaue
+TXN-1110,2026-10-06 10:15:00,CUST-012,PROD-004,Notebook Set,Stationery,3,199.00,597.00,Debit Card,Cebu City
+TXN-1111,2026-10-27 15:44:00,CUST-039,PROD-003,USB-C Hub,Electronics,1,1299.00,1299.00,Credit Card,Lapu-Lapu
+TXN-1112,2026-10-19 19:18:00,CUST-045,PROD-001,Wireless Mouse,Electronics,2,599.00,1198.00,Credit Card,Cebu City
+TXN-1113,2026-10-13 14:07:00,CUST-035,PROD-004,Notebook Set,Stationery,3,199.00,597.00,GCash,Mandaue
+TXN-1114,2026-10-05 08:10:00,CUST-020,PROD-005,Desk Lamp,Home,2,899.00,1798.00,Debit Card,Davao City
+TXN-1115,2026-10-08 15:44:00,CUST-020,PROD-005,Desk Lamp,Home,4,899.00,3596.00,Credit Card,Lapu-Lapu
+TXN-1116,2026-10-06 17:02:00,CUST-028,PROD-008,Laptop Stand,Accessories,4,799.00,3196.00,Maya,Davao City
+TXN-1117,2026-10-06 11:43:00,CUST-037,PROD-005,Desk Lamp,Home,1,899.00,899.00,Debit Card,Cebu City
+TXN-1118,2026-10-03 20:48:00,CUST-012,PROD-005,Desk Lamp,Home,5,899.00,4495.00,Credit Card,Davao City
+TXN-1119,2026-10-12 17:27:00,CUST-041,PROD-008,Laptop Stand,Accessories,3,799.00,2397.00,Credit Card,Cebu City
+TXN-1120,2026-10-27 13:20:00, ,PROD-008,Laptop Stand,Accessories,3,799.00,2397.00,Cash,Mandaue
+TXN-1121,2026-11-01 12:42:00,CUST-026,PROD-006,Water Bottle,Lifestyle,4,349.00,1396.00,Debit Card,Cebu City
+TXN-1122,2026-10-21 12:20:00,CUST-008,PROD-008,Laptop Stand,Accessories,1,799.00,799.00,Credit Card,Davao City
+TXN-1123,2026-10-30 14:03:00,CUST-013,PROD-001,Wireless Mouse,Electronics,5,599.00,2995.00,Debit Card,Lapu-Lapu
+TXN-1124,2026-10-04 11:17:00,CUST-036,PROD-008,Laptop Stand,Accessories,4,799.00,3196.00,GCash,Lapu-Lapu
+TXN-1125,2026-10-08 08:40:00,CUST-039,PROD-008,Laptop Stand,Accessories,4,799.00,3196.00,GCash,Mandaue
+TXN-1126,2026-10-01 16:26:00,CUST-006,PROD-005,Desk Lamp,Home,5,899.00,4495.00,GCash,Cebu City
+TXN-1127,2026-10-10 15:59:00,CUST-019,PROD-008,Laptop Stand,Accessories,1,799.00,799.00,Debit Card,Lapu-Lapu
+TXN-1128,2026-10-31 11:29:00,CUST-036,PROD-007,Office Chair,Furniture,4,5499.00,21996.00,GCash,Talisay
+TXN-1129,2026-11-02 19:56:00,CUST-009,PROD-004,Notebook Set,Stationery,5,199.00,995.00,Cash,Lapu-Lapu
+TXN-1130,2026-11-02 12:52:00,CUST-001,PROD-007,Office Chair,Furniture,3,5499.00,16497.00,Maya,Lapu-Lapu
+TXN-1131,2026-10-29 16:30:00,CUST-023,PROD-008,Laptop Stand,Accessories,2,799.00,1598.00,Maya,Davao City
+TXN-1132,2026-10-21 11:44:00,CUST-016,PROD-007,Office Chair,Furniture,4,5499.00,21996.00,Debit Card,Talisay
+TXN-1133,2026-10-03 13:47:00,CUST-031,PROD-004,Notebook Set,Stationery,4,199.00,796.00,Credit Card,Talisay
+TXN-1134,2026-10-03 10:32:00,CUST-038,PROD-003,USB-C Hub,Electronics,4,1299.00,5196.00,Maya,Cebu City
+TXN-1135,2026-11-03 15:00:00,CUST-010,PROD-008,Laptop Stand,Accessories,1,799.00,799.00,Credit Card,Mandaue
+TXN-1136,2026-10-17 13:39:00,CUST-045,PROD-002,Mechanical Keyboard,Electronics,4,2499.00,9996.00,Credit Card,Cebu City
+TXN-1137,2026-10-25 13:40:00,CUST-032,PROD-006,Water Bottle,Lifestyle,5,349.00,1745.00,Debit Card,Cebu City
+TXN-1138,2026-10-19 11:47:00,CUST-006,PROD-002,Mechanical Keyboard,Electronics,2,2499.00,4998.00,Credit Card,Cebu City
+TXN-1139,2026-10-11 19:19:00,CUST-002,PROD-002,Mechanical Keyboard,Electronics,4,2499.00,9996.00,Cash,Lapu-Lapu
+TXN-1140,2026-10-23 13:27:00,CUST-010,PROD-001,Wireless Mouse,Electronics,3,599.00,1797.00,GCash,Davao City
+TXN-1141,2026-10-12 10:11:00,CUST-006,PROD-007,Office Chair,Furniture,5,5499.00,27495.00,Debit Card,Talisay
+TXN-1142,2026-10-10 11:29:00,CUST-041,PROD-004,Notebook Set,Stationery,4,199.00,796.00,Maya,Talisay
+TXN-1143,2026-10-30 12:43:00,CUST-035,PROD-005,Desk Lamp,Home,1,899.00,899.00,GCash,Cebu City
+TXN-1144,2026-10-20 18:27:00,CUST-045,PROD-008,Laptop Stand,Accessories,3,799.00,2397.00,Maya,Talisay
+TXN-1145,2026-10-25 15:06:00,CUST-016,PROD-005,Desk Lamp,Home,2,899.00,1798.00,Credit Card,Davao City
+TXN-1146,2026-10-19 19:18:00,CUST-002,PROD-006,Water Bottle,Lifestyle,5,349.00,1745.00,Credit Card,Lapu-Lapu
+TXN-1147,2026-10-04 17:47:00,CUST-032,PROD-001,Wireless Mouse,Electronics,5,599.00,2995.00,Maya,Mandaue
+TXN-1148,2026-10-13 17:16:00,CUST-044,PROD-006,Water Bottle,Lifestyle,2,349.00,698.00,GCash,Cebu City
+TXN-1149,2026-10-29 08:37:00,CUST-024,PROD-001,Wireless Mouse,Electronics,3,599.00,1797.00,GCash,Cebu City
+TXN-1150,2026-10-27 10:12:00,CUST-009,PROD-005,Desk Lamp,Home,3,899.00,2697.00,Debit Card,Lapu-Lapu
