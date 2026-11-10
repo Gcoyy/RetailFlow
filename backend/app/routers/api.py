@@ -150,6 +150,16 @@ def get_sources(db: Session = Depends(get_db)):
 
         record_count = source_records + destination_records
 
+        results.append({
+            "id": source.id,
+            "name": source.name,
+            "type": source.source_type,
+            "status": source.status,
+            "sync": time_ago(source.last_sync_at),
+            "records": f"{record_count:,}",
+            "created": format_datetime(source.created_at),
+        })
+
     return results
 
 

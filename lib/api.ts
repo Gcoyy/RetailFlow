@@ -1,13 +1,143 @@
-export type Status = "Success" | "Running" | "Failed" | "Paused" | "Warning" | "Disconnected" | "Cancelled"
-export type Severity = "Critical" | "High" | "Medium" | "Low"
-export const sources = [
-  ["Shopify Store","REST API","Connected","5 min ago","48,920","Jan 12, 2024"],["PostgreSQL Warehouse","Database","Connected","12 min ago","2.4M","Jan 08, 2024"],["Sales Transactions","CSV","Connected","1 hour ago","128,440","Feb 02, 2024"],["Customer CRM","REST API","Connected","18 min ago","84,320","Jan 19, 2024"],["Inventory System","Database","Connected","25 min ago","52,180","Jan 25, 2024"],["Supplier Records","CSV","Warning","2 hours ago","18,920","Feb 11, 2024"],["Marketing Analytics","REST API","Connected","30 min ago","96,450","Feb 14, 2024"],["Legacy ERP","Database","Disconnected","1 day ago","—","Dec 18, 2023"]
-].map(([name,type,status,sync,records,created])=>({name,type,status,sync,records,created}))
-export const pipelines = [
-  ["Customer ETL","Customer CRM","PostgreSQL","Running","2m 34s","12,450","99.8%"],["Sales Import","Shopify Store","PostgreSQL","Success","1m 48s","8,900","100%"],["Inventory Sync","Inventory System","PostgreSQL","Success","56s","4,200","99.9%"],["Supplier Import","Supplier Records","PostgreSQL","Failed","12s","0","92.1%"],["Marketing ETL","Marketing Analytics","PostgreSQL","Success","3m 12s","15,600","99.7%"],["ERP Synchronization","Legacy ERP","PostgreSQL","Paused","—","0","97.4%"],["Transaction Processing","Sales Transactions","PostgreSQL","Success","4m 21s","25,300","99.9%"],["Customer Transformation","PostgreSQL","PostgreSQL","Success","2m 10s","11,800","100%"],["Product Catalog ETL","Shopify Store","PostgreSQL","Running","1m 15s","6,400","99.6%"],["Daily Reporting ETL","PostgreSQL","PostgreSQL","Success","2m 52s","18,200","99.8%"]
-].map(([name,source,destination,status,duration,records,rate])=>({name,source,destination,status,duration,records,rate}))
-export const executions = [...pipelines,...pipelines.slice(1,6)].map((p,i)=>({id:`EX-${2401+i}`,pipeline:p.name,status:p.status,records:p.records,duration:p.duration,start:`Oct ${31-i}, 10:${String(6+i).padStart(2,"0")} AM`,trigger:i%3===0?"Manual":"Scheduled"}))
-const issues = ["Missing customer email","Invalid phone number","Duplicate transaction ID","Negative product quantity","Missing customer ID","Invalid date format","Null product price","Invalid email format","Missing supplier reference","Duplicate customer record","Negative transaction amount","Invalid postal code"]
-export const qualityIssues = issues.map((error,i)=>({id:`VAL-${1200+i}`,dataset:i%2?"customer_master.csv":"sales_transactions.csv",field:error.split(" ").slice(-1)[0],rule:i%3===0?"Required field":i%3===1?"Format validation":"Uniqueness check",error,severity:(i%4===0?"Critical":i%3===0?"High":i%2===0?"Medium":"Low") as Severity,date:`Oct ${31-i}, 2024`,status:i<3?"Open":"Resolved"}))
-export const logs = Array.from({length:24},(_,i)=>({id:i, time:`Oct 31, 10:${String(42-i).padStart(2,"0")}:12 AM`,level:(i%7===0?"ERROR":i%5===0?"WARNING":i%3===0?"DEBUG":"INFO"),pipeline:pipelines[i%pipelines.length].name,execution:`EX-${2401+i%10}`,message:["Pipeline execution started.","Successfully connected to PostgreSQL.","Extracted 12,450 records.","Data validation completed.","120 records rejected due to missing values.","Transformation step completed.","Failed to authenticate with supplier API."][i%7],component:["extractor","loader","validator","scheduler"][i%4]}))
-export const activity = ["Customer ETL completed successfully","Supplier Import reported an error","Data quality validation finished","New source connected: Marketing Analytics","Product Catalog ETL started"]
+
+export type Status =
+  | "Success"
+  | "Running"
+  | "Failed"
+  | "Paused"
+  | "Warning"
+  | "Disconnected"
+  | "Cancelled"
+  | "Connected";
+
+export type Severity = "Critical" | "High" | "Medium" | "Low";
+
+const API_BASE_URL = "http://127.0.0.1:8000/api";
+
+// Types describe the data returned by FastAPI.
+
+export interface DashboardSummary {
+  total_sources: number;
+  total_pipelines: number;
+  total_records: number;
+  valid_records: number;
+  failed_records: number;
+  total_quality_issues: number;
+  success_rate: number;
+  latest_run_status: string;
+}
+
+export interface DataSource {
+  id: number;
+  name: string;
+  type: string;
+  status: Status;
+  sync: string;
+  records: string;
+  created: string | null;
+}
+
+export interface Pipeline {
+  id: number;
+  name: string;
+  source: string;
+  destination: string;
+  status: Status;
+  duration: string;
+  records: string;
+  rate: string;
+}
+
+export interface Execution {
+  id: string;
+  pipeline: string;
+  status: Status;
+  records: string;
+  duration: string;
+  start: string | null;
+  trigger: string;
+}
+
+export interface QualityIssue {
+  id: string;
+  dataset: string;
+  field: string;
+  rule: string;
+  error: string;
+  severity: Severity;
+  date: string | null;
+  status: string;
+}
+
+export interface PipelineLog {
+  id: number;
+  time: string | null;
+  level: string;
+  pipeline: string;
+  execution: string;
+  message: string;
+  component: string;
+}
+
+// These variables start empty and are populated by refreshData().
+
+export let summary: DashboardSummary = {
+  total_sources: 0,
+  total_pipelines: 0,
+  total_records: 0,
+  valid_records: 0,
+  failed_records: 0,
+  total_quality_issues: 0,
+  success_rate: 0,
+  latest_run_status: "None",
+};
+
+export let sources: DataSource[] = [];
+export let pipelines: Pipeline[] = [];
+export let executions: Execution[] = [];
+export let qualityIssues: QualityIssue[] = [];
+export let logs: PipelineLog[] = [];
+export let activity: string[] = [];
+
+// Reusable function for communicating with FastAPI.
+
+async function apiGet<T>(endpoint: string): Promise<T> {
+  const response = await fetch(`${API_BASE_URL}${endpoint}`);
+
+  if (!response.ok) {
+    throw new Error(
+      `API request failed: ${response.status} ${response.statusText}`
+    );
+  }
+
+  return response.json() as Promise<T>;
+}
+
+// Fetch all dashboard data from the backend.
+
+export async function refreshData(): Promise<void> {
+  const [
+    dashboardData,
+    sourceData,
+    pipelineData,
+    issueData,
+    executionData,
+    logData,
+    activityData,
+  ] = await Promise.all([
+    apiGet<DashboardSummary>("/dashboard/summary"),
+    apiGet<DataSource[]>("/sources"),
+    apiGet<Pipeline[]>("/pipelines"),
+    apiGet<QualityIssue[]>("/quality/issues"),
+    apiGet<Execution[]>("/executions"),
+    apiGet<PipelineLog[]>("/logs"),
+    apiGet<string[]>("/activity"),
+  ]);
+
+  summary = dashboardData;
+  sources = sourceData;
+  pipelines = pipelineData;
+  qualityIssues = issueData;
+  executions = executionData;
+  logs = logData;
+  activity = activityData;
+}
